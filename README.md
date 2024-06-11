@@ -10,3 +10,17 @@ vba script goes through each sheet, which are different quarters, and calculates
 - the stock with the greatest percent increase
 - the stock with the greatest percent decrease
 - the stock with the greatest total volume
+
+the results for the different quarters are below: 
+
+Q1:
+![Q1](https://github.com/caitlin-hartley/vba-challenge/blob/main/images/q1_stock_results.png)
+
+Q2:
+![Q2](https://github.com/caitlin-hartley/vba-challenge/blob/main/images/q2_stock_results.png)
+
+Q3:
+![Q3](https://github.com/caitlin-hartley/vba-challenge/blob/main/images/q3_stock_results.png)
+
+Q4:
+![Q4](https://github.com/caitlin-hartley/vba-challenge/blob/main/images/q4_stock_results.png)

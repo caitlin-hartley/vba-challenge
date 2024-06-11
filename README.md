@@ -2,7 +2,8 @@
 hw2, stock analysis
 
 vba script that analyzes quarterly stock data
-
+- code folder contains vbs code and xlsm sheet
+  
 vba script goes through each sheet, which are different quarters, and calculates the following statistics for each unique ticker:
 - change in price from opening price at beginning of quarter to closing price at end of quarter
 - percent change in stock price over the quarter (change in price / opening price)

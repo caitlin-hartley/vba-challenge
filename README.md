@@ -1,5 +1,6 @@
 # vba-challenge
 hw2, stock analysis
+
 vba script that analyzes quarterly stock data
 
 vba script goes through each sheet, which are different quarters, and calculates the following statistics for each unique ticker:

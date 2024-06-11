@@ -7,6 +7,7 @@ Dim ws As Worksheet
 Dim min_date As Date
 Dim max_date As Date
 
+' Define volume variable
 Dim volume As Variant
 
 ' Define summary_row variable
@@ -39,37 +40,24 @@ Dim summary_row As Integer
         
             ' Begin loop through individual sheet
             For j = 1 To lastRow
-            
-                ' Set volume at 0
                  
-                ' Searches for unique cell values
+                ' Searches for unique ticker values
                 If ws.Cells(j + 1, 1).Value <> ws.Cells(j, 1).Value Then
-                
-                    ' Find ticker and opening value
                     ticker = ws.Cells(j + 1, 1).Value
-           
                 End If
                 
-                ' Searches for row for each ticker
+                ' Adds up stock volume for that ticker
                 If ws.Cells(j + 1, 1).Value = ticker Then
-                    
-                    ' Adds up stock volume for that ticker
                     volume = volume + ws.Cells(j + 1, 7).Value
-                    
                 End If
                 
                 ' Find opening value based on minimum date for each ticker symbol
                 If ws.Cells(j, 1).Value = ticker And ws.Cells(j, 2) = min_date Then
-                
-                    ' Record opening value
                     opening = ws.Cells(j, 3).Value
-                
                 End If
                 
                 ' Find closing value based on maximum date for each ticker value
                 If ws.Cells(j + 1, 1).Value = ticker And ws.Cells(j + 1, 2) = max_date Then
-                    
-                    ' Record closing value
                     closing = ws.Cells(j + 1, 6).Value
                 
                     ' Calculate quarterly change
@@ -121,20 +109,19 @@ Dim summary_row As Integer
             ' Add ticker values to table
             For i = 1 To lastRow
             
-            If ws.Cells(i, 11).Value = greatest_increase Then
-                ws.Cells(2, 16).Value = ws.Cells(i, 9).Value
-            End If
+                If ws.Cells(i, 11).Value = greatest_increase Then
+                    ws.Cells(2, 16).Value = ws.Cells(i, 9).Value
+                End If
             
-            If ws.Cells(i, 11).Value = greatest_decrease Then
-            ws.Cells(3, 16).Value = ws.Cells(i, 9).Value
-            End If
+                If ws.Cells(i, 11).Value = greatest_decrease Then
+                    ws.Cells(3, 16).Value = ws.Cells(i, 9).Value
+                End If
             
-            If ws.Cells(i, 12).Value = greatest_volume Then
-                ws.Cells(4, 16).Value = ws.Cells(i, 9).Value
-            End If
+                If ws.Cells(i, 12).Value = greatest_volume Then
+                    ws.Cells(4, 16).Value = ws.Cells(i, 9).Value
+                End If
             
             Next i
-             
 
     Next ws
 

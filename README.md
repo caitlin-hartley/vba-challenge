@@ -6,9 +6,13 @@
 ## Table of Contents
 
 [Sheets Loop](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#vba-script-begins-by-going-through-each-sheet)
+
 [Values Loop](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#finding-and-calulating-values-in-each-sheet)
+
 [Summary Table Loop](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#adding-values-to-summary-table)
+
 [Greatest Stocks Loop](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#goes-through-summary-table-to-find)
+
 [Results](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#the-results-for-the-different-quarters-are-below)
 
 

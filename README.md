@@ -2,6 +2,8 @@
 ### hw2, stock analysis
 ### VBA script that analyzes quarterly stock data
 - code folder contains vbs code and xlsm sheet
+
+![Values](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#finding-and-calulating-values-in-each-sheet)
   
 ## VBA script begins by going through each sheet:
   - Creates the summary table headers

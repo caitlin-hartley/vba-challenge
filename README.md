@@ -3,7 +3,7 @@
 ### VBA script that analyzes quarterly stock data
 - code folder contains vbs code and xlsm sheet
 
-![Sheets Loop]()
+![Sheets](https://github.com/caitlin-hartley/vba-challenge/blob/main/README.md#vba-script-begins-by-going-through-each-sheet)
   
 ## VBA script begins by going through each sheet:
   - Creates the summary table headers

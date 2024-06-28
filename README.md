@@ -1,19 +1,36 @@
 # vba-challenge
-hw2, stock analysis
-
-vba script that analyzes quarterly stock data
+### hw2, stock analysis
+### VBA script that analyzes quarterly stock data
 - code folder contains vbs code and xlsm sheet
   
-vba script goes through each sheet, which are different quarters, and calculates the following statistics for each unique ticker:
-- change in price from opening price at beginning of quarter to closing price at end of quarter
-- percent change in stock price over the quarter (change in price / opening price)
-- total volume of stock over the quarter
+## VBA script begins by going through each sheet:
+  - Creates the summary table headers
+  - Calculates the min and max date for each quarter
+  - Finds the last row of the sheet
+  - Starts the summary row counter
 
+## Finding and calulating values in each sheet:
+- Find unique ticker values
+- Add up stocker volume for that unique ticker
+- Finds opening value based on minimum date for each ticker
+- Finds closing value for each ticker
+- Calculates the quarterly change in price for each ticker
+- Calculates percent change in stock price over the quarter (change in price / opening price)
+
+## Adding values to summary table:
+- Add values to each summary table
+- Format percentages
+- Color codes the quarterly change based on whether the increase was positive, negative, or zero
+- Increases summary row counter by 1 to move to the next row of the summary table
+
+## Goes through summary table to find:
 - the stock with the greatest percent increase
 - the stock with the greatest percent decrease
 - the stock with the greatest total volume
+- the name of the stock with these values
+- Add to smaller stats table
 
-the results for the different quarters are below: 
+## The results for the different quarters are below: 
 
 Q1:
 ![Q1](https://github.com/caitlin-hartley/vba-challenge/blob/main/images/q1_stock_results.png)
